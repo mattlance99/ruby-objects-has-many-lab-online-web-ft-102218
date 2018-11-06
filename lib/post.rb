@@ -1,13 +1,11 @@
 require 'pry'
 class Post
 attr_accessor :author, :title, :posts, :all
-#@@all = []
-#@posts = []
+@@all = []
+
   def initialize(title)
     @title = title
-    #@posts << title
-    #@@all << title
-
+    @@all << self
   end 
 
   def author_name
@@ -19,7 +17,7 @@ attr_accessor :author, :title, :posts, :all
   end
   
   def self.all 
-    #@posts
+    @@all
   end
     
 end 
