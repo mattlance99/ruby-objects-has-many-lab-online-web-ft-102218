@@ -2,10 +2,10 @@ require 'pry'
 class Post
 attr_accessor :author, :title, :posts, :all
 #@@all = []
-@posts = []
+#@posts = []
   def initialize(title)
     @title = title
-    @posts << title
+    #@posts << title
     #@@all << title
 
   end 
@@ -19,7 +19,7 @@ attr_accessor :author, :title, :posts, :all
   end
   
   def self.all 
-    @posts
+    #@posts
   end
     
 end 
